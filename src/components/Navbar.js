@@ -8,7 +8,7 @@ const Navbar = () => {
         <Link to='/' className='home-page'>Zona de Comidas</Link>
         <ul>
             <li>
-              <Link to='/shop'>Shop</Link>
+              <Link to='/shop'>Browse Meals</Link>
             </li>
             <li>
               <Link to='/cart'>Cart</Link>

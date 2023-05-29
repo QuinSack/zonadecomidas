@@ -51,3 +51,16 @@ body {
     font-size: large;
     padding: 0.7%;
 }
+
+.mealcategories{
+    width:70%;
+    height:10%;
+    background-color: whitesmoke;
+    align-content: center;
+    margin-left: 13%;
+}
+
+.ml{
+    margin-right: 1%;
+    border-color: aqua;
+}
