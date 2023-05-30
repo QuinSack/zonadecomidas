@@ -65,8 +65,10 @@ const lunchMeals = [
         <div className='lunchcontainer'>
             <ul className='lunchbox'>
                 <img src={lun.image} className='img'/>
-                {lun.name}<br />
-                GHC {lun.price.toFixed(2)}
+                <div className='nameprice'>
+                  <strong>{lun.name}</strong><br />
+                  <strong>GHC {lun.price.toFixed(2)}</strong>
+                </div>
             </ul>
         </div>
         
@@ -79,8 +81,10 @@ const LunchMeals = () => {
       <div className='lunchmealsheader'>
         <h3><strong>ZONA DE COMIDAS LUNCH CUISINE</strong></h3>
       </div>
+      <div>
         {lunchList}
         <BackToHomeButton />
+      </div>
     </div>
   )
 }

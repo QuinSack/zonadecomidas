@@ -90,7 +90,7 @@ body {
     max-width: 60%;
     max-height: 50%;
     margin-top: 10%;
-    margin-left: 10%;
+    margin-left: 1%;
     float: none;
 }
 
@@ -99,4 +99,12 @@ body {
     height: 20%;
     background-color: cornflowerblue;
     margin: 1%;
+}
+
+.nameprice{
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    background-color: cornflowerblue;
+    margin-top: 5%;
 }
