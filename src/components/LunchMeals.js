@@ -76,7 +76,9 @@ const lunchMeals = [
 const LunchMeals = () => {
   return (
     <div>
-        <h3>Lunch Meals ...to be updated</h3>
+      <div className='lunchmealsheader'>
+        <h3><strong>ZONA DE COMIDAS LUNCH CUISINE</strong></h3>
+      </div>
         {lunchList}
         <BackToHomeButton />
     </div>
