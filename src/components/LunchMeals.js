@@ -69,6 +69,9 @@ const lunchMeals = [
                   <strong>{lun.name}</strong><br />
                   <strong>GHC {lun.price.toFixed(2)}</strong>
                 </div>
+                <div>
+                  <button className='addcartbtn'>Add to Cart</button>
+                </div>
             </ul>
         </div>
         
