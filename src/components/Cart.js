@@ -3,6 +3,9 @@ import BackToHomeButton from './BackToHomeButton'
 
 const Cart = (props) => {
   const {cartItems, onAdd, onRemove} = props
+  
+
+
   return (
     <div>
         <div>

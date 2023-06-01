@@ -26,12 +26,21 @@ function App() {
     }
   }
 
+  const onRemove = (lun) => {
+    const exist = cartItems.find(x => x.id === lun.id);
+    if (exist.qty === 1){
+      setCartItems(cartItems.filter((x) => x.id !== lun.id))
+    } else {
+      setCartItems(cartItems.map(x => x.id === lun.id ? {...exist, qty: exist.qty - 1} : x))
+    }
+  }
+
   return (
     <div className="App">
         <Routes>
           <Route path='/' element={<HomePage />}/>
           <Route path='/shop' element={<Shop />}/>
-          <Route path='/cart' element={<Cart cartItems={cartItems} onAdd={onAdd}/>}/>
+          <Route path='/cart' element={<Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}/>}/>
           <Route path='/aboutus' element={<About />}/>
           <Route path='/contactus' element={<Contact />}/>
           <Route path='/careers' element={<Careers />}/>
