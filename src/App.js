@@ -36,11 +36,11 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div>
         <Routes>
           <Route path='/' element={<HomePage />}/>
           <Route path='/shop' element={<Shop />}/>
-          <Route path='/cart' element={<Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}/>}/>
+          <Route path='/cart' element={<Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} setCartItems={setCartItems}/>}/>
           <Route path='/aboutus' element={<About />}/>
           <Route path='/contactus' element={<Contact />}/>
           <Route path='/careers' element={<Careers />}/>
@@ -55,3 +55,6 @@ function App() {
 }
 
 export default App;
+
+
+/*https://reactjsexample.com/a-sample-e-commerce-store-built-with-react-redux-and-react-router-dom/*/

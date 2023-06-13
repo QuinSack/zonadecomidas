@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <nav className='nav'>
+    <nav className='nav' sticky = 'top'>
         <Link to='/' className='home-page'>Zona de Comidas</Link>
         <ul>
             <li>

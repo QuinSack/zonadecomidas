@@ -1,12 +1,17 @@
 import React from 'react'
 import BackToHomeButton from './BackToHomeButton'
+import { useEffect } from 'react'
 
 const Cart = (props) => {
-  const {cartItems, onAdd, onRemove} = props
+  const {cartItems, onAdd, onRemove, setCartItems} = props
   const itemsPrice = cartItems.reduce((a,c) => a + c.price * c.qty, 0);
   const taxPrice = itemsPrice * 0.17;
   const deliveryPrice = itemsPrice > 200 ? 0 : 15;
   const totalPrice = itemsPrice + taxPrice + deliveryPrice;
+
+  /*useEffect(()=>{
+    alert('Thanks for buying from us')
+  },[cartItems.length])*/
 
 
   return (
@@ -30,6 +35,7 @@ const Cart = (props) => {
           {cartItems.length !==0 && (
             <>
               <hr></hr>
+              <div><h1>FEE SUMMARY</h1></div>
               <div>
                 <div><strong>Meal Price</strong></div>
                 <div>GHC {itemsPrice.toFixed(2)}</div>
@@ -48,6 +54,10 @@ const Cart = (props) => {
               </div>
             </>
           )}
+        </div>
+        <div>
+          <button style={{backgroundColor: "greenyellow"}} onClick={()=>setCartItems([])}>Clear Cart</button>
+          <button style={{backgroundColor: "lightpink"}}>Place Order</button>
         </div>
         <BackToHomeButton />
     </div>
