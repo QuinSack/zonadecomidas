@@ -12,6 +12,8 @@ import SideMeals from './components/SideMeals';
 import Desserts from './components/Desserts';
 import Smoothies from './components/Smoothies';
 import { useState } from 'react';
+import SignInForm from './components/SignInForm';
+import SignUpForm from './components/SignUpForm';
 
 
 function App() {
@@ -49,6 +51,8 @@ function App() {
           <Route path='/shop/sidemeals' element={<SideMeals />} />
           <Route path='/shop/desserts' element={<Desserts />} /> 
           <Route path='/shop/smoothies' element={<Smoothies />} />
+          <Route path='/signin' element={<SignInForm />} />
+          <Route path='/signup' element={<SignUpForm />} />
         </Routes>     
     </div>
   );
