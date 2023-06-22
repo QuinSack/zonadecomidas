@@ -19,7 +19,7 @@ const Cart = (props) => {
         <div>
           {cartItems.length === 0 && <div>Cart is Empty</div>}
         </div>
-        <div>
+        <div className='cartcontainer'>
           {cartItems.map((item) => {
             return <div key={item.id}>
               <div>{item.name}</div>
@@ -54,11 +54,11 @@ const Cart = (props) => {
               </div>
             </>
           )}
-        </div>
-        <div>
-          <button style={{backgroundColor: "greenyellow"}} onClick={()=>setCartItems([])}>Clear Cart</button>
-          <button style={{backgroundColor: "lightpink"}}>Place Order</button>
-        </div>
+          <div>
+            <button style={{backgroundColor: "greenyellow"}} onClick={()=>setCartItems([])}>Clear Cart</button>
+            <button style={{backgroundColor: "lightpink"}}>Place Order</button>
+          </div>
+        </div> 
         <BackToHomeButton />
     </div>
   )

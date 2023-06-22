@@ -133,3 +133,12 @@ body {
     background-color: gray;
     border-color: crimson;
 }
+
+.cartcontainer{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: aqua;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
