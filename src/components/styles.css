@@ -142,3 +142,28 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+.signinformcontainer{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signinformwelcome{
+    width: 50%;
+    height: 100vh;
+    background-color: cornflowerblue;
+}
+
+.signinform{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    background-color: brown;
+    justify-content: center;
+    align-items: center;
+       
+}
