@@ -4,7 +4,6 @@ const SignInForm = () => {
   return (
     <div className='signinformcontainer'>
         <div className='signinformwelcome'>
-            <h3>Create a Zona de Comidas Profile</h3>
             <h3>Some fancy UI down below...</h3>
         </div>
         <form className='signinform'>
