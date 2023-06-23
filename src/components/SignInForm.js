@@ -8,13 +8,22 @@ const SignInForm = () => {
             <h3>Some fancy UI down below...</h3>
         </div>
         <form className='signinform'>
+            <div className='forminput'>
+                <section className='emailsection'>
+                    <div className='emaillabel'>
+                        <label htmlFor='email'>Email: </label>
+                    </div>
+                    <div className='emailinput'>
+                        <input type='email' placeholder='Enter your email' id='email' name='email' />
+                    </div>
+                </section>
+                <section className='passwordsection'> 
+                    <label htmlFor='password' className='passwordlabel'>Password: </label>
+                    <input type='password' placeholder='Enter your password' id='password' name='password' className='passwordinput' />
+                </section>
+            </div>   
             <section>
-                <label htmlFor='firstName'>First Name: </label>
-                <input type='text' placeholder='Enter your first name' id='firstName' name='firstName' />
-            </section>
-            <section>
-                <label htmlFor='lastName'>Last Name: </label>
-                <input type='text' placeholder='Enter your last name' id='lastName' name='lastName' />
+                <button type='submit' className='signinbtn'>Log In</button>
             </section>
         </form>
     </div>

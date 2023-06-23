@@ -156,14 +156,54 @@ body {
     width: 50%;
     height: 100vh;
     background-color: cornflowerblue;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
 
 .signinform{
     width: 50%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     background-color: brown;
     justify-content: center;
     align-items: center;
-       
+    gap: 10px;
+}
+
+.forminput{
+    width: 50%;
+    height: 100px;
+    background-color: aqua;
+}
+
+.emailsection{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.emaillabel{
+    float: left;
+    background-color: blue;
+}
+
+.emailinput{
+    float: right;
+    background-color: green;
+}
+
+.passwordsection{
+    display: flex;
+    background-color: yellow;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.signinbtn{
+    width: 80px;
+    border-radius: 20px 20px 20px 20px;
 }
