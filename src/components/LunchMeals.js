@@ -1,6 +1,7 @@
 import React from 'react'
 import BackToHomeButton from './BackToHomeButton'
 import lunchMealsArray from './LunchMealsArray'
+import { Container,Row, Col } from 'reactstrap'
 
 
 const LunchMeals = (props) => {
@@ -19,7 +20,8 @@ const LunchMeals = (props) => {
                   <button className='addcartbtn' onClick={() => onAdd(lun)}>Add to Cart</button>
                 </div>
             </ul>
-        </div>        
+        </div>
+        
     )
   })
 

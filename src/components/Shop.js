@@ -1,10 +1,12 @@
 import React from 'react'
 import BackToHomeButton from './BackToHomeButton'
 import { Link } from 'react-router-dom'
+import  Navbar  from './Navbar'
 
 const Shop = () => {
   return (
     <div>
+        <Navbar />
         <h3>Available Meals</h3>
         <div className='mealcategories'>
           <Link to='/shop/breakfastmeals'><button className='ml'>Breakfast</button></Link>
