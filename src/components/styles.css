@@ -225,3 +225,36 @@ body {
     align-items: center;
     gap: 10px;
 }
+
+.lunchmealscont{
+    background-color: red;
+    width: 300px;
+}
+
+.lunchimag{
+    object-fit: fill;
+}
+
+.fooditem{
+    background-color: aqua;
+    margin: 0;
+}
+
+.meetteam{
+    background-color: green;
+    gap: 10px;
+    padding: 5px;
+}
+
+.storypage{
+    background-color: yellow;
+}
+
+.careercont{
+    background-color: aqua;
+}
+
+
+.teamcard{
+    background-color: red;
+}
