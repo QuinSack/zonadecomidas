@@ -241,7 +241,6 @@ body {
 }
 
 .meetteam{
-    background-color: green;
     gap: 10px;
     padding: 5px;
 }
@@ -251,10 +250,16 @@ body {
 }
 
 .careercont{
-    background-color: aqua;
+    background-color: whitesmoke;
 }
 
 
 .teamcard{
-    background-color: red;
+    justify-content: end;
+    align-items: center;
+}
+
+.teamimage{
+    width: 100%;
+    object-fit: cover;
 }
