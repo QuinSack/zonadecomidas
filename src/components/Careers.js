@@ -1,11 +1,15 @@
 import React from 'react'
 import BackToHomeButton from './BackToHomeButton'
 import Navbar from './Navbar'
-import { Container,Row, Col } from 'reactstrap'
+import { Container, Row, Col, Card, Image, Button } from 'react-bootstrap'
 import team1 from '../images/team1.jpg'
 import team2 from '../images/team2.jpg'
 import team3 from '../images/team3.jpg'
 import team4 from '../images/team4.jpg'
+import inspire1 from '../images/ava-1.jpg'
+import inspire2 from '../images/ava-2.jpg'
+import inspire3 from '../images/ava-3.jpg'
+import inspire4 from '../images/ava-4.jpg'
 
 const Careers = () => {
   const teamitemcard = [
@@ -35,14 +39,60 @@ const Careers = () => {
     }
   ]
 
+const inspiringstories = [
+  {
+    image: inspire1,
+    name: "Kingsley Aguzey",
+    description: "Experienced chef in the tea and coffee industry. One of the very best in the city",
+    role: "Coffee Chef"
+  },
+  {
+    image: inspire2,
+    name: "Kingsley Aguzey",
+    description: "Experienced chef in the tea and coffee industry. One of the very best in the city",
+    role: "Coffee Chef"
+  },
+  {
+    image: inspire3,
+    name: "Kingsley Aguzey",
+    description: "Experienced chef in the tea and coffee industry. One of the very best in the city",
+    role: "Coffee Chef"
+  },
+  {
+    image: inspire4,
+    name: "Kingsley Aguzey",
+    description: "Experienced chef in the tea and coffee industry. One of the very best in the city",
+    role: "Coffee Chef"
+  }
+]
+  
   return (
     <>
       <Navbar />
-      <Container className='careercont'>
+      <Container  className='careercont'>
         <Row className='meetteam'>
           <h3 className='text-center'>Meet our team</h3>
           {
             teamitemcard.map((item) => {
+                return <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={item.image} />
+                <Card.Body>
+                  <Card.Title>{item.name}</Card.Title>
+                  <Card.Text>
+                    {item.description}
+                  </Card.Text>
+                  <Card.Subtitle>
+                    {item.role}
+                  </Card.Subtitle>
+                </Card.Body>
+              </Card>
+            })
+          }
+        </Row>
+        <Row>
+          <h3 className='text-center'><strong>Inspiring Stories</strong></h3>
+          {
+            inspiringstories.map((item) => {
                 return <Col className='teamcard'>
                     <div>
                         <section className='teamimage'>
