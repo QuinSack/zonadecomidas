@@ -89,26 +89,22 @@ const inspiringstories = [
             })
           }
         </Row>
-        <Row>
+        <Row style={{margin: '70px', justifyContent: 'space-evenly', gap: '1px', padding:'0px'}}>
           <h3 className='text-center'><strong>Inspiring Stories</strong></h3>
           {
             inspiringstories.map((item) => {
-                return <Col className='teamcard'>
-                    <div>
-                        <section className='teamimage'>
-                            <img src={item.image} alt={item.name} />
-                        </section>
-                        <section className='teamname'>
-                            <h3>{item.name}</h3>
-                        </section>
-                        <section className='teamdescription'>
-                            <p>{item.description}</p>
-                        </section>
-                        <section>
-                            <h3>{item.role}</h3>
-                        </section>
-                    </div>
-                </Col>
+                return <Card style={{ width: '18rem', padding: '0px' }} className=''>
+                <Card.Img variant="top" src={item.image} style={{objectFit: 'cover'}} />
+                <Card.Body>
+                  <Card.Title>{item.name}</Card.Title>
+                  <Card.Text>
+                    {item.description}
+                  </Card.Text>
+                  <Card.Subtitle>
+                    {item.role}
+                  </Card.Subtitle>
+                </Card.Body>
+              </Card>
             })
           }
         </Row>
