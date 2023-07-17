@@ -65,6 +65,8 @@ const inspiringstories = [
     role: "Coffee Chef"
   }
 ]
+
+const openroles = ["Dispatch rider", "Business Analyst", "Junior Frontend Developer", "Senior Backend Developer", "Chef", "Janitor", "Customer Service Representative"]
   
   return (
     <>
@@ -108,10 +110,25 @@ const inspiringstories = [
             })
           }
         </Row>
+        <Row>
+          <h3 className='text-center'><strong>Available Positions</strong></h3>
+          <Col xs={3}>
+            {openroles.map((role) => {
+              return (
+                <ul style={{marginLeft: '70px', marginBottom:'20px'}}><strong>{role}</strong></ul>
+              )
+            })}
+          </Col>
+          <Col xs={9} className='applybtn'>
+            {openroles.map((role) => {
+              return (
+                <Button variant='info' style={{width: '90px', marginBottom:'5px'}}>Apply</Button>
+              )
+            })}
+          </Col>
+        </Row>
       </Container>
       <div>
-        <h3>Inspiring Stories</h3>
-        <h3>Available Positions</h3>
         <BackToHomeButton />
       </div>
     </> 
