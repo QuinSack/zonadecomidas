@@ -262,3 +262,13 @@ body {
 .teamimage{
     object-fit: fill;
 }
+
+.availablepositions{
+    display: flex;
+    flex-direction: column;
+}
+
+.applybtn{
+    display: flex;
+    flex-direction: column;
+}
