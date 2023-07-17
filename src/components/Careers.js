@@ -93,7 +93,7 @@ const inspiringstories = [
           <h3 className='text-center'><strong>Inspiring Stories</strong></h3>
           {
             inspiringstories.map((item) => {
-                return <Card style={{ width: '18rem', padding: '0px' }} className=''>
+                return <Card style={{ width: '18rem', padding: '0px', marginBottom: '10px' }} className=''>
                 <Card.Img variant="top" src={item.image} style={{objectFit: 'cover'}} />
                 <Card.Body>
                   <Card.Title>{item.name}</Card.Title>
