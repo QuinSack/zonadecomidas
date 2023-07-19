@@ -16,6 +16,14 @@ const SignUpForm = () => {
                     <p>Sign In</p>
                     <button>Register</button>
                 </section>
+                <section className='emailsection'>
+                    <label><strong>Email Address</strong></label>
+                    <input />
+                </section>
+                <section className='passwordsection'>
+                    <label><strong>Password</strong></label>
+                    <input />
+                </section>
             </form>
           </div>
         </Col>
