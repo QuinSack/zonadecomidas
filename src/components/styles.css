@@ -200,32 +200,6 @@ body {
     font-size: larger;
 }
 
-.signupformcontainer{
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.signupformwelcome{
-    width: 50%;
-    height: 100vh;
-    background-color: cornflowerblue;
-    display: flex;
-    justify-content: center;
-} 
-
-.signupform{
-    width: 50%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
 .lunchmealscont{
     background-color: red;
     width: 300px;
@@ -271,4 +245,40 @@ body {
 .applybtn{
     display: flex;
     flex-direction: column;
+}
+
+.leftcol{
+    background-color: aqua;
+    min-height: 100vh;
+}
+
+.rightcol{
+    background-color: yellow;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.signupformcontainer{
+    background-color: white;
+    height: 80%;
+    width: 60%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.signinregister{
+    display: flex;
+    justify-content: space-between;
+}
+
+.signinregister button{
+    border-radius: 25px;
+    font-size: 0.8rem;
 }

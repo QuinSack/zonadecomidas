@@ -1,31 +1,26 @@
 import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 
 const SignUpForm = () => {
   return (
-    <div className='signupformcontainer'>
-        <div className='signupformwelcome'>
-            <h3>Some fancy UI down below...</h3>
-        </div>
-        <form className='signupform'>
-            <div className='forminput'>
-                <section className='emailsection'>
-                    <div className='emaillabel'>
-                        <label htmlFor='email'>Email: </label>
-                    </div>
-                    <div className='emailinput'>
-                        <input type='email' placeholder='Enter your email' id='email' name='email' />
-                    </div>
+    <Container fluid>
+      <Row>
+        <Col md={6} className="leftcol">
+          <h1>Left Column</h1>
+          <p>Would display some image here later</p>
+        </Col>
+        <Col md={6} className="rightcol">
+          <div className="signupformcontainer">
+            <form>
+                <section className='signinregister'>
+                    <p>Sign In</p>
+                    <button>Register</button>
                 </section>
-                <section className='passwordsection'> 
-                    <label htmlFor='password' className='passwordlabel'>Password: </label>
-                    <input type='password' placeholder='Enter your password' id='password' name='password' className='passwordinput' />
-                </section>
-            </div>   
-            <section>
-                <button type='submit' className='signupbtn'>Create Account</button>
-            </section>
-        </form>
-    </div>
+            </form>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   )
 }
 
