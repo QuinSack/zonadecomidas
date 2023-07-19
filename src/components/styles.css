@@ -282,3 +282,25 @@ body {
     border-radius: 25px;
     font-size: 0.8rem;
 }
+
+.emailsection{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 0;
+}
+
+.emailsection input{
+    height: 40px;
+}
+
+.passwordsection{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 0;
+}
+
+.passwordsection input{
+    height: 40px;
+}
