@@ -1,5 +1,6 @@
+
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, Button } from 'react-bootstrap'
 
 const SignUpForm = () => {
   return (
@@ -23,6 +24,15 @@ const SignUpForm = () => {
                 <section className='passwordsection'>
                     <label><strong>Password</strong></label>
                     <input />
+                </section>
+                <section className='staysignin'>
+                  <label>
+                    <input type='checkbox' />Stay signed in
+                  </label>
+                  <p>Forgot your password?</p>
+                </section>
+                <section className='logbtn'>
+                  <button>Sign In</button>
                 </section>
             </form>
           </div>

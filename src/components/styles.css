@@ -297,10 +297,24 @@ body {
 .passwordsection{
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 5px;
     gap: 0;
 }
 
 .passwordsection input{
     height: 40px;
+}
+
+.staysignin{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.logbtn button{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
 }
