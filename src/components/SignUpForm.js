@@ -1,6 +1,11 @@
 
 import React from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import { faGoogle, faFacebook, faApple } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
 
 const SignUpForm = () => {
   return (
@@ -34,6 +39,18 @@ const SignUpForm = () => {
                 <section className='logbtn'>
                   <button>Sign In</button>
                 </section>
+                <Link><h4 className='trbsign'>Trouble signing in?</h4></Link>
+                <p className='ortext'>OR</p>
+                <hr />
+                <section className='linkaccountbtn'>
+                  <button><FontAwesomeIcon icon={faGoogle} color='red'></FontAwesomeIcon><strong> Continue with Google</strong></button>
+                  <button><FontAwesomeIcon icon={faFacebook} color='blue'></FontAwesomeIcon><strong> Continue with Facebook</strong></button>
+                  <button><FontAwesomeIcon icon={faApple}></FontAwesomeIcon><strong> Continue with Apple</strong></button>
+                </section>
+                <p>
+                  By clicking Sign In or Continue with Google, Facebook or Apple, you agree to Zona
+                  de Comidas' <Link>Terms of Use</Link> and <Link>Privacy Policy</Link>
+                </p>
             </form>
           </div>
         </Col>

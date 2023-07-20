@@ -248,12 +248,11 @@ body {
 }
 
 .leftcol{
-    background-color: aqua;
     min-height: 100vh;
 }
 
 .rightcol{
-    background-color: yellow;
+    background-color: aquamarine;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -263,7 +262,7 @@ body {
 
 .signupformcontainer{
     background-color: white;
-    height: 80%;
+    height: 85%;
     width: 60%;
     margin-top: 50px;
     display: flex;
@@ -317,4 +316,30 @@ body {
     background-color: black;
     color: white;
     border-radius: 50px;
+}
+
+.trbsign{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.ortext{
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.linkaccountbtn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.linkaccountbtn button{
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    height: 40px;
 }
