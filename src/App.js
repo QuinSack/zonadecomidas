@@ -60,5 +60,3 @@ function App() {
 
 export default App;
 
-
-/*https://reactjsexample.com/a-sample-e-commerce-store-built-with-react-redux-and-react-router-dom/*/
