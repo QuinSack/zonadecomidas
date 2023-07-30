@@ -4,7 +4,7 @@ import BackToHomeButton from './BackToHomeButton'
 const Smoothies = () => {
   return (
     <div>
-        <h3>Coming soon...stay tuned</h3>
+        <h3>Coming soon..stay tuned</h3>
         <BackToHomeButton />
     </div>
   )
